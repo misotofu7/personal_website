@@ -1,3 +1,5 @@
+import styles from "./HomePage.module.css";
+
 export default function HomePage() {
   /*
   Add a profile picture of yourself on that same page
@@ -5,28 +7,28 @@ export default function HomePage() {
   */
 
   return(
-    <main>
-      <h1>Kaylie Chang's Portfolio</h1>
+    <main className={styles.page}>
+      <h1 className={styles.title}>Kaylie Chang's Portfolio</h1>
 
       {/* profile image here */}
       <img 
         src="/profile_picture.jpeg"
         alt="Profile Picture of Kaylie Chang"
-        style={{ borderRadius: '50%', width: '200px', height: '200px', border: '5px solid #4A90E2' }} 
+        className={styles.profileImage} 
       />
 
-      <section>
-        <h2>About Me</h2>
+      <section className={styles.card}>
+        <h2 className={styles.sectionTitle}>About Me</h2>
 
-        <h3>
-          Education
-        </h3>
-        <p>
+        <h3 className={styles.subTitle}>Education</h3>
+
+        <p className={styles.text}>
           University of California, Santa Cruz
+          <br/>
           Computer Science Major
+          <br/>
           Freshman (Class of 2029)
         </p>
-
       </section>
     </main>
   );
