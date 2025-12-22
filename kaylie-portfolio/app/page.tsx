@@ -1,15 +1,6 @@
 import styles from "./HomePage.module.css";
 
 export default function HomePage() {
-  /*
-  Hero / Intro
-  Projects
-  Skills
-  Experience (optional)
-  About
-  Contact
-  */
-
   return(
     <>
     <header className={styles.header}>
@@ -17,28 +8,38 @@ export default function HomePage() {
         <div className={styles.logo}>Kaylie Chang</div>
 
         <ul className={styles.navLinks}>
-          <li>Projects</li>
-          <li>Skills</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/kayliechang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://github.com/misotofu7" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main className={styles.page}>
-      <h1 className={styles.name}>Kaylie Chang</h1>
-
+    <main className={styles.main}>
       <section id={styles.hero}>
-        <h1>Computer Science Student</h1>
-        <p>Happy to code and learn new things! XD</p>
-      </section>
 
-      {/* profile image here */}
-      <img 
-        src="/profile_picture.jpeg"
-        alt="Profile Picture of Kaylie Chang"
-        className={styles.profileImage} 
-      />
+        <div className={styles.heroContent}>
+          <div className={styles.heroText}>
+            <h1>Kaylie Chang</h1>
+            <p>Computer Science Student & Aspiring Software Engineer (AI/ML focus)</p>
+            <p>Excited to code and learn new things, especially AI!</p>
+          </div>
+
+          <div className={styles.image}>
+            <img 
+              src="/profile_picture.jpeg"
+              alt="Profile Picture of Kaylie Chang in hero"
+              className={styles.profileImage}
+            />
+          </div>
+        </div>
+
+      </section>
 
       <section className={styles.card}>
         <h2 className={styles.sectionTitle}>About Me</h2>
@@ -53,8 +54,8 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section className={styles.card}>
-        <h3 className={styles.subTitle}>Personal Projects</h3>
+      <section id="projects">
+        <h3 className={styles.subTitle}>Projects</h3>
         <p className={styles.text}>
           - This Portfolio Website!
           <br/>
@@ -64,7 +65,7 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section className={styles.card}>
+      <section id="skills">
         <h3 className={styles.subTitle}>Skills</h3>
         <p className={styles.text}>
           - Programming Languages: Python, Java, HTML, CSS
@@ -85,6 +86,14 @@ export default function HomePage() {
           - Reading webnovels
         </p>
       </section>
+
+      <section className={styles.card}>
+        <h2 className={styles.sectionTitle}>Contact Me</h2>
+        <p className={styles.text}>
+          Email: ...
+        </p>
+      </section>
+
     </main>
     </>
   );
