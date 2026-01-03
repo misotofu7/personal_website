@@ -1,4 +1,4 @@
-/* ======= NAVIGATION BAR ======= */
+/* NAVIGATION BAR */
 .header {
   background: #124060;
   position: sticky;
@@ -40,7 +40,7 @@
   transition: color 0.3s;
 }
 
-/* ======= HERO ======= */
+/* HERO SECTION */
 #hero {
   background: #124060;
   color: #000000;
@@ -64,13 +64,17 @@
   gap: 2rem;
 }
 
+.heroDescription {
+  color: white;
+  font-size: 1.2rem;
+}
+
 .heroText {
   flex: 1;                       /* take available left space */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; /* space out text vertically */
-  height: 300px; 
-  color: #ffffff;
+  height: 300px;
 }
 
 .image {
@@ -80,7 +84,13 @@
   justify-content: center;
 }
 
-/* ======= MAIN PORTFOLIO ======= */
+.name {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+/* MAIN PORTFOLIO */
 .main {
   margin: 0;
   padding: 0;
@@ -89,9 +99,15 @@
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  background-color: #ffffff;
+  background-color: #e0e0e0;
   min-height: 100vh;
   text-align: left;
+}
+
+.sections {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
@@ -101,11 +117,16 @@
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+  gap: 1.5rem;
+  justify-content: center;
+  border: 1px solid rgb(50, 50, 146);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .sectionTitle {
   font-size: 1.6rem;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 10px;
 }
 
