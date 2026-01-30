@@ -5,7 +5,7 @@ export default function HomePage() {
     <>
     <header className={styles.header}>
       <nav className={styles.navBar}>
-        <div className={styles.logo}>Kaylie Chang</div>
+        <a className={styles.logo} href="#home">Kaylie Chang</a>
 
         <ul className={styles.navLinks}>
           <li><a href="#projects">Projects</a></li>
@@ -24,9 +24,9 @@ export default function HomePage() {
       <section id={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            <h1 className={styles.name}>Kaylie Chang</h1>
+            <h1 className={styles.name} id="home">Kaylie Chang</h1>
             <p className={styles.heroDescription}>Computer Science Student & Aspiring Software Engineer (AI/ML focus)</p>
-            <p className={styles.heroDescription}>Excited to code and learn new things, especially AI!</p>
+            <p className={styles.heroDescription}>Excited to code and learn new things!</p>
           </div>
 
           <div className={styles.image}>
@@ -52,18 +52,18 @@ export default function HomePage() {
         </section>
 
         <section className={styles.card}>
-          <h3 className={styles.sectionTitle}>Projects</h3>
+          <h3 className={styles.sectionTitle} id="projects">Projects</h3>
           <p className={styles.text}>
             - This Portfolio Website!
             <br/>
-            - (in progress) Password Generator Website
+            - (Completed - testing) Password Generator Website
             <br/>
             - (in progress) Spam Email Classifier using Machine Learning
           </p>
         </section>
 
         <section className={styles.card}>
-          <h3 className={styles.sectionTitle}>Skills</h3>
+          <h3 className={styles.sectionTitle} id="skills">Skills</h3>
           <p className={styles.text}>
             - Programming Languages: Python, Java, HTML, CSS
             <br/>
@@ -80,7 +80,9 @@ export default function HomePage() {
             <br/>
             - Dancing
             <br/>
-            - Reading webnovels
+            - Reading
+            <br />
+            - Making iMovies
           </p>
         </section>
       </div>
