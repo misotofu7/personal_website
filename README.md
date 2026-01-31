@@ -1,2 +1,3 @@
-# personal_website
-A portfolio that showcases skills and pending/completed projects
+# Kaylie Chang's Portfolio
+
+A portfolio that showcases my skills and pending/completed projects.
