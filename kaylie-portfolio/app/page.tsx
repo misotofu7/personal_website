@@ -3,6 +3,7 @@ import styles from "./HomePage.module.css";
 export default function HomePage() {
   return(
     <>
+    {/* Navbar */}
     <header className={styles.header}>
       <nav className={styles.navBar}>
         <a className={styles.logo} href="#home">Kaylie Chang</a>
@@ -20,6 +21,7 @@ export default function HomePage() {
       </nav>
     </header>
 
+    {/* Hero */}
     <main className={styles.main}>
       <section id={styles.hero}>
         <div className={styles.heroContent}>
@@ -29,15 +31,30 @@ export default function HomePage() {
             <p className={styles.heroDescription}>Excited to code and learn new things!</p>
           </div>
 
-          <div className={styles.image}>
-            <img 
-              src="/profile_picture.jpeg"
-              alt="Profile Picture of Kaylie Chang in hero"
-              className={styles.profileImage}
-            />
+          <div className={styles.imagePad}>
+            <div className={styles.image}>
+              <img
+                src="/profile_picture.jpeg"
+                alt="Profile Picture of Kaylie Chang in hero"
+                className={styles.profileImage}
+              />
+            </div>
           </div>
+
         </div>
       </section>
+
+      {/* Note for later --> emphasize this part the most */}
+        <section className={styles.card}>
+          <h3 className={styles.sectionTitle} id="projects">Projects</h3>
+          <p className={styles.text}>
+            - This Portfolio Website!
+            <br/>
+            - (Completed - testing) Password Generator Website
+            <br/>
+            - (in progress) Spam Email Classifier using Machine Learning
+          </p>
+        </section>
 
       <div className={styles.sections}>
         <section className={styles.card}>
@@ -48,17 +65,6 @@ export default function HomePage() {
             Computer Science Major
             <br/>
             Freshman (Class of 2029)
-          </p>
-        </section>
-
-        <section className={styles.card}>
-          <h3 className={styles.sectionTitle} id="projects">Projects</h3>
-          <p className={styles.text}>
-            - This Portfolio Website!
-            <br/>
-            - (Completed - testing) Password Generator Website
-            <br/>
-            - (in progress) Spam Email Classifier using Machine Learning
           </p>
         </section>
 
