@@ -158,3 +158,39 @@
   list-style: disc;
   padding-left: 1.25rem;
 }
+
+/* Fancy reveal scrolling */
+/* base state */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+/* revealed state */
+.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* add different types of delay/stagger */
+.revealDelay1 {
+  transition-delay: 0.2s;
+}
+
+.revealDelay2 {
+  transition-delay: 0.4s;
+}
+
+.revealDelay3 {
+  transition-delay: 0.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  };
+}
