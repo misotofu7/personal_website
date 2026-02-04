@@ -8,7 +8,7 @@ This repository contains personal projects created while studying computer scien
 - HTML, CSS, and JS
 - Python
 - Java
-- Basic frameworks
+- Basic framework (Next.js)
 - Writing code considering accessibility
 
 ## Projects
