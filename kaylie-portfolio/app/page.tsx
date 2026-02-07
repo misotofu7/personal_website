@@ -1,6 +1,33 @@
+"use client";
+
 import styles from "./HomePage.module.css";
+import { useEffect, useRef, useState } from "react";
 
 export default function HomePage() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.15,
+        rootMargin: "0px 0px -10% 0px",
+      }
+    );
+  
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return(
     <>
     {/* Navbar */}
@@ -28,7 +55,11 @@ export default function HomePage() {
           <div className={styles.heroText}>
             <h1 className={styles.name} id="home">Kaylie Chang</h1>
             <p className={styles.heroDescription}>
-              Computer Science Student -- Aspiring Software Engineer (AI/ML)
+              Computer Science Student
+            </p>
+            <br />
+            <p className={styles.heroDescription}>
+              Aspiring Software Engineer (AI/ML)
             </p>
             <br />
             <p className={styles.heroDescription}>
@@ -47,8 +78,12 @@ export default function HomePage() {
       </section>
 
       {/* Note for later --> emphasize this part the most */}
-        <section className={styles.card}>
-          <h3 className={styles.sectionTitle} id="projects">Projects</h3>
+        <section
+          id="projects"
+          ref={sectionRef as any}
+          className={styles.card}
+        >
+          <h3 className={styles.sectionTitle}>Projects</h3>
           <ul className={styles.bulletPoints}>
             <li>This Portfolio Website!</li>
             <li>(Completed - testing) Password Generator Website</li>
@@ -56,7 +91,10 @@ export default function HomePage() {
           </ul>
         </section>
 
-      <div className={styles.sections}>
+      <div
+        id="education"
+        className={styles.sections}
+      >
         <section className={styles.card}>
           <h3 className={styles.sectionTitle}>Education</h3>
           <ul className={styles.bulletPoints}>
@@ -71,8 +109,11 @@ export default function HomePage() {
           </ul>
         </section>
 
-        <section className={styles.card}>
-          <h3 className={styles.sectionTitle} id="skills">Skills</h3>
+        <section
+          id="skills"
+          className={styles.card}
+        >
+          <h3 className={styles.sectionTitle}>Skills</h3>
           <ul className={styles.bulletPoints}>
             <li>Programming Languages: Python, Java, HTML, CSS</li>
             <li>Frameworks/Libraries: React, Next.js</li>
@@ -81,7 +122,10 @@ export default function HomePage() {
           </ul>
         </section>
 
-        <section className={styles.card}>
+        <section
+          id="hobbies"
+          className={styles.card}
+        >
           <h3 className={styles.sectionTitle}>Hobbies</h3>
           <ul className={styles.bulletPoints}>
             <li>Playing the guitar</li>
