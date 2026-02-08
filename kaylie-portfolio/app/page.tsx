@@ -103,7 +103,10 @@ export default function HomePage() {
             <li>GPA: 4.0/4.0</li>
             <li>Relevant Courses:
               CSE 30 (Abstractions of Python Programming),
-              Coursera - Univeristy of Michigan Introduction to HTML5
+              Coursera - Univeristy of Michigan Introduction to HTML5,
+              (to-be-started) CodePath WEB102 - Intro to Web Development,
+              AP Computer Science Principles (Python),
+              AP Computer Science A (Java)
             </li>
             <li>Honors: Dean's List</li>
           </ul>
