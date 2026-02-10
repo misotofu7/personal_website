@@ -2,6 +2,7 @@
 
 import styles from "./HomePage.module.css";
 import { useEffect, useRef, useState } from "react";
+import ProjectsSection from "./ProjectsSection";
 
 export default function HomePage() {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -78,18 +79,7 @@ export default function HomePage() {
       </section>
 
       {/* Note for later --> emphasize this part the most */}
-        <section
-          id="projects"
-          ref={sectionRef as any}
-          className={styles.card}
-        >
-          <h3 className={styles.sectionTitle}>Projects</h3>
-          <ul className={styles.bulletPoints}>
-            <li>This Portfolio Website!</li>
-            <li>(Completed - testing) Password Generator Website</li>
-            <li>(in-progress) Spam Email Classifier using Machine Learning</li>
-          </ul>
-        </section>
+      <ProjectsSection />
 
       <div
         id="education"

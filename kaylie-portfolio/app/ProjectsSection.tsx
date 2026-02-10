@@ -1,7 +1,7 @@
 "use client";
 
 import { use, useEffect, useMemo, useRef, useState } from "react";
-import styles from "./page.module.css";
+import styles from "./HomePage.module.css";
 import { projects } from "./projectsData";
 
 function ProjectSlide({
@@ -81,3 +81,15 @@ function ProjectSlide({
     </section>
   );
 };
+
+export default function ProjectsSection() {
+    const list = useMemo(() => projects, []);
+
+    return (
+        <div id="projects" className={styles.projectsStack}>
+            {list.map((p, i) => (
+                <ProjectSlide key={p.title} project={p} index={i} />
+            ))}
+        </div>
+    )
+}
