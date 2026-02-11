@@ -161,10 +161,58 @@
   will-change: opacity, transform;
 }
 
+/* for the Projects Section */
+.projectsStack {
+  scroll-snap-type: y mandatory;
+}
+
+.projectSlide {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 64px clamp(16px, 4vw, 48px);
+  scroll-snap-align: start;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background: #e0e0e0;
+}
+
 /* revealed state */
 .revealVisible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.projectInner {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projectMeta {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgb(50, 50, 146);
+  padding: 32px;
+}
+
+/* Projects text */
+.projectKicker {
+  margin: 0 0 8px 0;
+  opacity: 0.7;
+}
+
+.projectTitle {
+  margin: 0 0 12px 0;
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #000;
+}
+
+.projectSummary {
+  margin: 0 0 18px 0;
+  line-height: 1.7;
+  color: #000;
 }
 
 /* add different types of delay/stagger */
