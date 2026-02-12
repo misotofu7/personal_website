@@ -215,7 +215,65 @@
   color: #000;
 }
 
+/* pills */
+.techRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.techPill {
+  display: inline-flex;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(18, 64, 96, 0.06);
+  color: #000;
+  font-size: 0.95rem;
+}
+
+/* links */
+.projectLinks {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.primaryBtn {
+  background: #124060;
+  color: white;
+}
+
+.secondaryBtn {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #000;
+}
+
 /* add different types of delay/stagger */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 600ms ease, transfor 600ms ease;
+  will-change: opacity, transform;
+}
+
+.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .revealDelay1 {
   transition-delay: 0.2s;
 }
