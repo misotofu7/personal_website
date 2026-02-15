@@ -14,5 +14,19 @@ export const projects = [
         tech: ["TypeScript", "Next.js", "React", "CSS"],
         github: "https://github.com/misotofu7/personal_website",
         demo: "put-video-here"
+    },
+    {
+        title: "Spam Email Classifier",
+        summary: "(in-progress) A machine learning model that classifies emails as spam or not spam based on their content and metadata.",
+        tech: ["Python", "scikit-learn", "pandas"],
+        github: "",
+        demo: "put-video-here"
+    },
+    {
+        title: "Health Logger Website",
+        summary: "A website where users can log their symptoms on a calendar.",
+        tech: ["JavaScript", "HTML", "CSS", "Node.js", "MongoDB"],
+        github: "...",
+        demo: "put-video-here"
     }
 ];
