@@ -82,26 +82,8 @@ export default function HomePage() {
       <ProjectsSection />
 
       <div
-        id="education"
         className={styles.sections}
       >
-        <section className={styles.card}>
-          <h3 className={styles.sectionTitle}>Education</h3>
-          <ul className={styles.bulletPoints}>
-            <li>University of California, Santa Cruz (Class of 2029)</li>
-            <li>B.S. in Computer Science</li>
-            <li>GPA: 4.0/4.0</li>
-            <li>Relevant Courses:
-              CSE 30 (Abstractions of Python Programming),
-              Coursera - Univeristy of Michigan Introduction to HTML5,
-              (to-be-started) CodePath WEB102 - Intro to Web Development,
-              AP Computer Science Principles (Python),
-              AP Computer Science A (Java)
-            </li>
-            <li>Honors: Dean's List</li>
-          </ul>
-        </section>
-
         <section
           id="skills"
           className={styles.card}
@@ -116,15 +98,22 @@ export default function HomePage() {
         </section>
 
         <section
-          id="hobbies"
+          id="education"
           className={styles.card}
         >
-          <h3 className={styles.sectionTitle}>Hobbies</h3>
+          <h3 className={styles.sectionTitle}>Education</h3>
           <ul className={styles.bulletPoints}>
-            <li>Playing the guitar</li>
-            <li>Dancing</li>
-            <li>Reading</li>
-            <li>Making iMovies</li>
+            <li>University of California, Santa Cruz (Class of 2029)</li>
+            <li>B.S. in Computer Science</li>
+            <li>GPA: 4.0/4.0</li>
+            <li>Relevant Courses:
+              CSE 30 (Abstractions of Python Programming),
+              Coursera - Univeristy of Michigan Introduction to HTML5,
+              (to-be-started) CodePath WEB102 - Intro to Web Development,
+              AP Computer Science Principles (Python),
+              AP Computer Science A (Java)
+            </li>
+            <li>Honors: Dean's List</li>
           </ul>
         </section>
       </div>
