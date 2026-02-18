@@ -153,6 +153,12 @@
   padding-left: 1.25rem;
 }
 
+.sublist {
+  list-style: circle outside;
+  padding-left: 1.5rem;
+  margin: 0.25rem 0 0;
+}
+
 /* Fancy reveal scrolling */
 /* base state */
 .reveal {

@@ -107,11 +107,13 @@ export default function HomePage() {
             <li>B.S. in Computer Science</li>
             <li>GPA: 4.0/4.0</li>
             <li>Relevant Courses:
-              CSE 30 (Abstractions of Python Programming),
-              Coursera - Univeristy of Michigan Introduction to HTML5,
-              (to-be-started) CodePath WEB102 - Intro to Web Development,
-              AP Computer Science Principles (Python),
-              AP Computer Science A (Java)
+              <ul className={styles.sublist}>
+                <li>(in-progress) CSE 30 (Abstractions of Python Programming)</li>
+                <li>Coursera - Univeristy of Michigan Introduction to HTML5</li>
+                <li>(upcoming) CodePath WEB102 - Intro to Web Development</li>
+                <li>AP Computer Science Principles (Python)</li>
+                <li>AP Computer Science A (Java)</li>
+              </ul>
             </li>
             <li>Honors: Dean's List</li>
           </ul>
