@@ -32,9 +32,16 @@ export default function HomePage() {
   return(
     <>
     {/* Navbar */}
-    <header className={styles.header}>
+    <header className={styles.header} id="home">
       <nav className={styles.navBar}>
-        <a className={styles.logo} href="#home">Kaylie Chang</a>
+        <button
+          className={styles.homeButton}
+          onClick={() => {
+            window.scrollTo({top: 0, behavior: "smooth"});
+          }}
+        >
+          Kaylie Chang
+        </button>
 
         <ul className={styles.navLinks}>
           <li><a href="#projects">Projects</a></li>
@@ -54,7 +61,7 @@ export default function HomePage() {
       <section id={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            <h1 className={styles.name} id="home">Kaylie Chang</h1>
+            <h1 className={styles.name}>Kaylie Chang</h1>
             <p className={styles.heroDescription}>
               Computer Science Student
             </p>

@@ -1,3 +1,8 @@
+html {
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
 /* NAVIGATION BAR */
 .header {
   background: #124060;
@@ -17,7 +22,7 @@
   z-index: 100;
 }
 
-.logo {
+.homeButton {
   font-weight: 600;
   font-size: 1.2rem;
   color: white;
@@ -178,7 +183,9 @@
   display: grid;
   align-items: center;
   padding: 64px clamp(16px, 4vw, 48px);
+
   scroll-snap-align: start;
+  scroll-snap-stop: normal;
 
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   background: #e0e0e0;

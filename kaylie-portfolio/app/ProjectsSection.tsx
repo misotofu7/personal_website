@@ -20,13 +20,9 @@ function ProjectSlide({
 
         const observer = new IntersectionObserver(
             ([entry]) => {
-                if (entry.isIntersecting) {
-                    setVisible(true);
-                }
+                setVisible(entry.isIntersecting);
             },
-            {
-                threshold: 0.15,
-            }
+            { threshold: 0.15 }
         );
     
         observer.observe(el);

@@ -26,7 +26,7 @@ export const projects = [
         title: "Health Logger Website",
         summary: "(in-progress) A website where users can log their symptoms on a calendar.",
         tech: ["JavaScript", "HTML", "CSS", "Node.js", "MongoDB"],
-        github: "...",
+        github: "",
         demo: "put-video-here"
     }
 ];
